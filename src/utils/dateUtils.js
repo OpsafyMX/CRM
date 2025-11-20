@@ -1,5 +1,5 @@
 import { format, formatDistanceToNow, isToday, isYesterday, parseISO } from 'date-fns';
-import { es } from 'date-fns/locale/es';
+import es from 'date-fns/locale/es'; // ✅ IMPORT CORRECTO
 
 export const formatDate = (date) => {
     if (!date) return '';
