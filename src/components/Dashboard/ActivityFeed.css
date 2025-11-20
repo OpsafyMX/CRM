@@ -1,0 +1,73 @@
+.activity-feed {
+    max-height: 500px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.activity-item {
+    display: flex;
+    gap: var(--space-3);
+    padding: var(--space-3);
+    border-radius: var(--radius);
+    transition: background var(--transition-fast);
+}
+
+.activity-item:hover {
+    background: var(--bg-tertiary);
+}
+
+.activity-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.activity-icon-primary {
+    background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
+}
+
+.activity-icon-secondary {
+    background: linear-gradient(135deg, var(--secondary-500), var(--secondary-600));
+}
+
+.activity-icon-success {
+    background: linear-gradient(135deg, var(--success-500), var(--success-600));
+}
+
+.activity-icon-danger {
+    background: linear-gradient(135deg, var(--danger-500), var(--danger-600));
+}
+
+.activity-icon-gray {
+    background: linear-gradient(135deg, var(--gray-500), var(--gray-600));
+}
+
+.activity-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.activity-description {
+    font-size: var(--font-size-sm);
+    color: var(--text-primary);
+    margin: 0 0 var(--space-1) 0;
+    line-height: 1.4;
+}
+
+.activity-time {
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+}
+
+.activity-empty {
+    padding: var(--space-8);
+    text-align: center;
+    color: var(--text-tertiary);
+}
